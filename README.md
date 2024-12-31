@@ -59,8 +59,8 @@ This backend handles user registration, login, and supports full CRUD (Create, R
   
 ### Clone the repository:
 
-- git clone https://github.com/your-username/devNote.git
-- cd devNote/backend
+- git clone https://github.com/karan2782/devNote.git
+- cd devNote
 
 
 ### Install dependencies:
