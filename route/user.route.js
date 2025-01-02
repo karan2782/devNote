@@ -87,7 +87,7 @@ userRouter.post("/forgot-password", async(req, res)=>{
             }
         })
 
-    const resetURL = `http://localhost:3001/user/reset-password/${resetToken}`;
+    const resetURL = `https://devnoteapp.onrender.com/user/reset-password/:token${resetToken}`;
     const message = `Click this link to reset your password: ${resetURL}`;
 
     await transporter.sendMail({
