@@ -87,8 +87,9 @@ userRouter.post("/forgot-password", async(req, res)=>{
             }
         })
 
-    const resetURL = `https://devnoteapp.onrender.com/user/reset-password/:token${resetToken}`;
-    const message = `Click this link to reset your password: ${resetURL}`;
+    const resetURL = `https://simple-notes-todo.netlify.app/reset-password/${resetToken}`;
+    const message = `Click this link to reset your password: ${resetURL}
+                    If you don't want to reset your password, ignore this email.`;
 
     await transporter.sendMail({
         to:user.email,
